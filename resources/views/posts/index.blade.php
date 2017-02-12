@@ -2,7 +2,7 @@
 
     @section ('content')
 
-     		<div class="row">
+        <div class="row">
 
             <div class="col-sm-8 blog-main">
 
@@ -70,10 +70,10 @@
                   <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
                 </nav>
 
-           	</div><!-- /.blog-main -->
+            </div><!-- /.blog-main -->
 
             @include ('layouts.sidebar')
 
         </div><!-- /.row -->
-	
+  
     @endsection
