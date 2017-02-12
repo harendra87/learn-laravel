@@ -2,6 +2,18 @@
 
 	@section ('content')
 
-		<h1>This is another sample text 22222</h1>
+	 	<div class="row">
+
+	 		<div class="col-sm-8 blog-main">
+
+				<h1> Show show show show </h1>
+
+			</div><!-- /.blog-main -->
+
+			@include ('layouts.sidebar')
+
+		</div><!-- /.row -->
+
+
 
 	@endsection

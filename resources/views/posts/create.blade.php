@@ -2,6 +2,42 @@
 
 	@section ('content')
 
-		<h1>This is another sample text 22222</h1>
+	 	<div class="row">
 
+	 		<div class="col-sm-8 blog-main">
+
+				<h1> Publish a Post </h1>
+
+				<hr>
+
+				<form>
+
+
+				  <div class="form-group">
+				    <label for="title">Title</label>
+				    <input type="text" class="form-control" id="text" name="title">
+				  </div>
+
+
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Body</label>
+				    <textarea id="body" name="body" class="form-control"> </textarea>
+				  </div>
+
+
+				  <button type="submit" class="btn btn-primary">Publish</button>
+				  
+
+				</form>
+
+			</div><!-- /.blog-main -->
+
+			@include ('layouts.sidebar')
+
+
+
+
+		</div><!-- /.row -->
+
+	
 	@endsection

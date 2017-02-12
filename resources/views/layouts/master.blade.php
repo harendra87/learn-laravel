@@ -46,11 +46,12 @@
     @include ('layouts.nav')
 
 
-    <div class="container">
+        <div class="container">
 
-   		@yield ('content')
-   
-   	</div><!-- /.container -->
+       		 @yield ('content')
+       
+       	</div><!-- /.container -->
+
 
     @include ('layouts.footer')
 
