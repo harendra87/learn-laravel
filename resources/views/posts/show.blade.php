@@ -6,14 +6,16 @@
 
 	 		<div class="col-sm-8 blog-main">
 
-				<h1> Show show show show </h1>
+				<h1> {{ $post->title }} </h1>
 
-			</div><!-- /.blog-main -->
+					 {{ $post->body }}
+
+			</div> <!-- /.blog-main -->
+
 
 			@include ('layouts.sidebar')
 
+
 		</div><!-- /.row -->
-
-
 
 	@endsection
