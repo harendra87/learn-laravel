@@ -1,25 +1,3 @@
-{{-- <!DOCTYPE html>
-
-<html>
-
-<head>
-       
-    <title> My Application </title>
-
-</head>
-
-<body>
-       
-    
-	@yield('content')
-
-      
-
-</body>
-
-</html> --}}
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,11 +26,13 @@
     @include ('layouts.nav')
 
 
+
         <div class="container">
 
        		 @yield ('content')
        
        	</div><!-- /.container -->
+
 
 
     @include ('layouts.footer')
