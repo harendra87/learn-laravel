@@ -30,7 +30,7 @@ class PostsController extends Controller
 
 
 
-	public function show(Post $post)
+	public function show(Post $post) //Post::find(wildcard);
 	
 		{
 

@@ -22,6 +22,19 @@ class Post extends Model
 		}
 
 
+
+
+		public function user()  //now we can use this $comment->user->name
+
+			{
+
+				return $this->belongsTo(User::class); 
+			}
+
+
+
+
+
 		public function addComment($body)
 
 			{
