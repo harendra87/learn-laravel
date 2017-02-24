@@ -17,28 +17,11 @@
     <link href="/css/app.css" rel="stylesheet">
   </head>
 
-
-
-  <body>
-
-       
-    
+  <body>  
     @include ('layouts.nav')
-
-
-
         <div class="container">
-
-       		 @yield ('content')
-       
+       		 @yield ('content')       
        	</div><!-- /.container -->
-
-
-
     @include ('layouts.footer')
-
-
-      
-    
   </body>  
 </html>
