@@ -1,18 +1,22 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 use App\Post;
 
-
 class PostsController extends Controller
 {
     
 
 
+	public function __construct()
 
+	{
+		$this->middleware('auth')->except(['index', 'show']);
+	}
 
 	public function index()
 
@@ -75,7 +79,12 @@ class PostsController extends Controller
 
 			//creates new post using the request data and save it to the database
 
-			Post::create( request(['title','body'])); 
+			Post::create([
+				
+				'title' => request('title'),
+				'body' => request('body'),
+				'user_id' => auth()->id()		
+			]); 
 
 
 

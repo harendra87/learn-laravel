@@ -31,10 +31,7 @@
 						@endforeach	
 					</ul>
 				</div>
-
-
 				<hr>
-
 
 
 				<div class="card">
