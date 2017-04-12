@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class SessionsController extends Controller
 {
 
@@ -25,14 +26,24 @@ class SessionsController extends Controller
 
     public function store()
 	{
+		$this->validate(request(), [
+ 			'email' => 'required|email',
+ 			'password' => 'required'
+ 		]);
 
-		if (! auth()->attempt(request(['email', 'password'])))
+ 		
+		//dd(request()->all());
+		dd(auth()->attempt(request(['email', 'password'])));
+		if (auth()->attempt(request(['email', 'password'])))
 		{
-			return back()->withErrors([
-				'message' => 'Please check your credentials and try again.'
-			]);
+			return redirect()->home();
+			
 		}
 
-		return redirect()->home();
+
+		return back()->withErrors([
+			'message' => 'Please check your credentials and try again.'
+		]);
+
     }
 }
