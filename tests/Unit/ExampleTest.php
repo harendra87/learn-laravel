@@ -11,10 +11,14 @@ class ExampleTest extends TestCase
     /**
      * A basic test example.
      *
-     * @return void
+     * @return void$request->fingerprint()
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
+
+        $this->visit('/');
+        $this->see("Bootstrap");
     }
-}
+
+
+} 
