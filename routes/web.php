@@ -12,10 +12,6 @@
 */
 
 
-App::bind('App\Billing\Stripe', function(){
-	return new \App\Billing\Stripe(config('services.stripe.secret'));
-});
-
 $stripe = App::make('App\Billing\Stripe');
 
 dd($stripe);
