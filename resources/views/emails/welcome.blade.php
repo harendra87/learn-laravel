@@ -4,6 +4,6 @@
 	<title></title>
 </head>
 <body>
- <h1>Welcome to My Website</h1>
+ <h1>Welcome to My Website, {{ $user->name }}</h1>
 </body>
 </html>
