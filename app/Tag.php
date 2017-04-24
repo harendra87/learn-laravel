@@ -10,4 +10,14 @@ class Tag extends Model
 		{
 			return $this->belongsToMany(Post::class);
 		}
+
+
+// /If you would like model binding to use a database column other than id
+	public function getRouteKeyName()
+		{
+
+			return 'name';
+
+
+		}
 }

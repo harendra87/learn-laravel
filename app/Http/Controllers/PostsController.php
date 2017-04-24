@@ -3,9 +3,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Tag;
 use App\Post;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
@@ -16,8 +17,7 @@ class PostsController extends Controller
 
 
     public function index()
-    {
-
+    {    
 
         $posts = Post::latest()
             ->filter(request(['month', 'year']))
